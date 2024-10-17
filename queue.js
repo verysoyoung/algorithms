@@ -34,7 +34,6 @@ class Queue {
       this.front = 0;
       this.rear = 0;
     } else {
-      console.log("this.storage:", this.storage);
       temp = this.storage[this.front];
       delete this.storage[this.front];
       this.front += 1;
