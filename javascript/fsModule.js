@@ -1,4 +1,6 @@
-let fs = require('fs')
-let input = fs.readFileSync('파일경로').toString().split('\n')
+//파일시스템 모듈
 
-console.log('input')
+let fs = require('fs')
+let input = fs.readFileSync('input.txt').toString().split('\n')
+
+console.log(input)
