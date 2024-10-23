@@ -17,3 +17,8 @@ let min = arr.reduce((acc, cur) => (acc > cur ? cur : acc))
 let max = arr.reduce((acc, cur) => (acc < cur ? cur : acc))
 
 console.log(min, max)
+
+let minVal = arr.reduce((acc, cur) => Math.min(acc, cur))
+let maxVal = arr.reduce((acc, cur) => Math.max(acc, cur))
+
+console.log(minVal, maxVal)
