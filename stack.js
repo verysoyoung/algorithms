@@ -15,16 +15,34 @@ class Stack {
 
 let stack = new Stack()
 
-console.log('stack:', stack.push('11'))
-console.log('stack:', stack.push('22'))
-console.log('stack:', stack.push('33'))
-console.log('stack:', stack.push('44'))
-console.log('stack:', stack.push('55'))
+stack.push('11')
+stack.push('22')
+stack.push('33')
+stack.push('44')
+stack.push('55')
 console.log('stack:', stack)
 
-console.log('stack:', stack.pop())
-console.log('stack:', stack.pop())
-console.log('stack:', stack.pop())
-console.log('stack:', stack.pop())
+stack.pop()
+stack.pop()
+stack.pop()
+stack.pop()
 
 console.log('stack:', stack)
+
+let stack2 = new Array()
+
+stack2.push('11')
+stack2.push('22')
+stack2.push('33')
+stack2.push('44')
+stack2.push('55')
+console.log('stack2:', stack2)
+
+stack2.pop()
+stack2.pop()
+stack2.pop()
+
+let reversed = stack2.reverse()
+
+console.log('stack2 reversed: ', reversed)
+console.log('stack2:', stack2)
