@@ -42,7 +42,7 @@ stack2.pop()
 stack2.pop()
 stack2.pop()
 
-let reversed = stack2.reverse()
+let reversed = stack2.slice().reverse()
 
 console.log('stack2 reversed: ', reversed)
 console.log('stack2:', stack2)

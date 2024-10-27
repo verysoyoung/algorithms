@@ -1,3 +1,4 @@
+//객체로 접근
 class Queue {
   constructor() {
     this.storage = {}
