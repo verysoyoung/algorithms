@@ -1,3 +1,4 @@
+//배열로 접근
 class Queue {
   constructor() {
     this.items = []
