@@ -1,8 +1,10 @@
+let arr = Array.from({ length: 10000 }, () => Math.floor(Math.random() * 1000))
+
+let sorted = Array.from({ length: arr.length }, () => 0)
 function merge(arr, left, mid, right) {
   let i = left
   let j = mid + 1
   let k = left //결과 배열의 인덱스
-  let sorted = []
   while (i <= mid && j <= right) {
     if (arr[i] <= arr[j]) sorted[k++] = arr[i++]
     else sorted[k++] = arr[j++]
@@ -21,6 +23,7 @@ function merge(arr, left, mid, right) {
   }
 }
 //병합정렬을 수행하는 함수는 재귀적으로 함수 호출
+//left는 첫 번째 요소 인덱스, right는 마지막 요소 인덱스
 function mergeSort(arr, left, right) {
   //원소가 1개인 경우, 해당 배열은 정렬이 된 상태로 이해 가능
   if (left < right) {
@@ -31,3 +34,5 @@ function mergeSort(arr, left, right) {
     merge(arr, left, mid, right) // 정렬된 2개의 배열을 하나로 병합(combine)
   }
 }
+const result = mergeSort(arr, 0, arr.length - 1)
+console.log(result)
