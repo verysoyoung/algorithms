@@ -1,6 +1,6 @@
 let [n, ...arr] = input
 
-const data = [...new Set(arr)]
+const data = [...new Set(arr)] //중복 제거
 const result = data.sort((a, b) => compare(a, b))
 function compare(a, b) {
   if (a.length != b.length) return a.length - b.length
