@@ -8,10 +8,10 @@ for (let i = 0; i < groups.length; i++) {
     .map(Number)
     .reduce((a, b) => a + b)
   if (i === 0) {
-    answer += cur
+    answer += cur // 첫 번째 그룹은 항상 덧셈
     console.log('+', cur)
   } else {
-    console.log('-', cur)
+    console.log('-', cur) // 두 번째 그룹부터 뺄셈
     answer -= cur
   }
 }
